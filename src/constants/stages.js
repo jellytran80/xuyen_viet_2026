@@ -1,0 +1,20 @@
+export const STAGES = [
+  { id: 1, name: "TP. Hồ Chí Minh - Đồng Nai", startKm: 0, endKm: 30, length: 30, landmark: "Cầu Đồng Nai", fact: "Khởi hành! Bạn đã chính thức rời TP.HCM bước vào hành trình xuyên Việt." },
+  { id: 2, name: "Đồng Nai - Bình Thuận", startKm: 30, endKm: 180, length: 150, landmark: "Tượng đài Long Khánh", fact: "Thử thách dài hơn với cung đường qua những vườn trái cây bạt ngàn." },
+  { id: 3, name: "Bình Thuận - Ninh Thuận", startKm: 180, endKm: 360, length: 180, landmark: "Tháp Chàm Pô Klong Garai", fact: "Chào mừng đến với thủ phủ của nắng, gió và cát." },
+  { id: 4, name: "Ninh Thuận - Khánh Hòa", startKm: 360, endKm: 510, length: 150, landmark: "Tháp Trầm Hương Nha Trang", fact: "Bạn đang chạy dọc theo cung đường biển tuyệt đẹp." },
+  { id: 5, name: "Khánh Hòa - Phú Yên", startKm: 510, endKm: 630, length: 120, landmark: "Mũi Điện Đại Lãnh", fact: "Vượt qua Đèo Cả hùng vĩ để đặt chân đến xứ sở 'hoa vàng trên cỏ xanh'." },
+  { id: 6, name: "Phú Yên - Bình Định", startKm: 630, endKm: 740, length: 110, landmark: "Tháp Đôi Quy Nhơn", fact: "Băng qua đèo Cù Mông để đến với mảnh đất võ Tây Sơn." },
+  { id: 7, name: "Bình Định - Quảng Ngãi", startKm: 740, endKm: 850, length: 110, landmark: "Sông Trà Khúc", fact: "Hơn một nửa chặng đường đã qua! Cố lên các runner." },
+  { id: 8, name: "Quảng Ngãi - Quảng Nam", startKm: 850, endKm: 940, length: 90, landmark: "Phố cổ Hội An", fact: "Những bước chân của bạn đang tiến rất gần đến vạch 1.000km." },
+  { id: 9, name: "Quảng Nam - Đà Nẵng", startKm: 940, endKm: 980, length: 40, landmark: "Cầu Rồng Đà Nẵng", fact: "Hãy check-in tại thành phố đáng sống nhất Việt Nam!" },
+  { id: 10, name: "Đà Nẵng - Thừa Thiên Huế", startKm: 980, endKm: 1060, length: 80, landmark: "Kinh thành Huế", fact: "Bạn vừa vượt qua Hải Vân Quan để đến với cố đô mộng mơ." },
+  { id: 11, name: "Thừa Thiên Huế - Quảng Trị", startKm: 1060, endKm: 1130, length: 70, landmark: "Thành cổ Quảng Trị", fact: "Địa phận của những trang lịch sử hào hùng và linh thiêng." },
+  { id: 12, name: "Quảng Trị - Quảng Bình", startKm: 1130, endKm: 1220, length: 90, landmark: "Quảng Bình Quan", fact: "Vương quốc của những hang động kỳ vĩ nhất thế giới." },
+  { id: 13, name: "Quảng Bình - Hà Tĩnh", startKm: 1220, endKm: 1310, length: 90, landmark: "Đèo Ngang", fact: "'Bước tới Đèo Ngang bóng xế tà' - Ranh giới tự nhiên tuyệt đẹp." },
+  { id: 14, name: "Hà Tĩnh - Nghệ An", startKm: 1310, endKm: 1390, length: 80, landmark: "Làng Sen quê Bác", fact: "Ghé thăm vùng đất địa linh nhân kiệt." },
+  { id: 15, name: "Nghệ An - Thanh Hóa", startKm: 1390, endKm: 1470, length: 80, landmark: "Cầu Hàm Rồng", fact: "Tỉnh thành rộng lớn nối liền hai miền Trung - Bắc." },
+  { id: 16, name: "Thanh Hóa - Ninh Bình", startKm: 1470, endKm: 1530, length: 60, landmark: "Cố đô Hoa Lư", fact: "Đặt chân vào cửa ngõ miền Bắc với núi đá vôi kỳ vĩ." },
+  { id: 17, name: "Ninh Bình - Hà Nam", startKm: 1530, endKm: 1570, length: 40, landmark: "Chùa Tam Chúc", fact: "Chặng áp chót! Đích đến đã ở ngay trước mắt." },
+  { id: 18, name: "Hà Nam - HÀ NỘI", startKm: 1570, endKm: 1620, length: 50, landmark: "Hồ Hoàn Kiếm", fact: "CHÚC MỪNG! Bạn đã hoàn thành cuộc hành trình xuyên Việt vĩ đại!" }
+];
