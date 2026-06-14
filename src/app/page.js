@@ -2,6 +2,12 @@
 import { useEffect, useState } from 'react';
 import { fetchRunnerData } from '../utils/dataFetcher';
 import { MapPin, Trophy, Navigation } from 'lucide-react';
+import dynamic from 'next/dynamic';
+
+const MapComponent = dynamic(
+  () => import('../components/MapComponent'), 
+  { ssr: false, loading: () => <p className="text-gray-400">Đang tải bản đồ vệ tinh...</p> }
+);
 
 export default function Home() {
   const [runners, setRunners] = useState([]);
@@ -73,18 +79,8 @@ export default function Home() {
       </div>
 
       {/* CỘT PHẢI: BẢN ĐỒ VIỆT NAM (LEAFLET) */}
-      <div className="w-full md:w-2/3 h-1/2 md:h-full bg-gray-950 flex items-center justify-center relative">
-        {/* Để làm bản đồ thật, bạn nạp component Leaflet Map vào đây. 
-            Dưới đây là khung chứa chuẩn để bạn tích hợp Map-View */}
-        <div className="absolute inset-0 bg-gray-950 flex flex-col items-center justify-center p-4 text-center">
-          <Navigation className="h-12 w-12 text-blue-500 animate-spin mb-4" />
-          <p className="text-sm text-gray-400 max-w-sm">
-            [Bản đồ mã nguồn mở Leaflet.js hiển thị tuyến đường QL1A và 30 Markers vị trí thực tế của Runner sẽ hiển thị tại khu vực này].
-          </p>
-          <div className="mt-4 text-xs bg-gray-900 border border-gray-800 p-2 rounded text-left font-mono">
-            Vị trí đầu bảng hiện tại: <span className="text-yellow-400">{runners[0]?.name}</span> đang ở chặng <span className="text-emerald-400">{runners[0]?.currentStage}</span>
-          </div>
-        </div>
+      <div className="w-full md:w-2/3 h-1/2 md:h-full bg-gray-950 relative">
+        <MapComponent runners={runners} />
       </div>
 
     </main>
