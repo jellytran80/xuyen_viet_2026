@@ -5,8 +5,17 @@ import { MapPin, Trophy, Navigation } from 'lucide-react';
 import dynamic from 'next/dynamic';
 
 const MapComponent = dynamic(
-  () => import('../components/MapComponent'), 
-  { ssr: false, loading: () => <p className="text-gray-400">Đang tải bản đồ vệ tinh...</p> }
+  () => import('../components/MapComponent').then((mod) => mod.default),
+  { 
+    ssr: false, 
+    loading: () => (
+      <div className="flex h-full w-full items-center justify-center bg-gray-950 text-gray-400">
+        <p className="animate-pulse flex items-center gap-2">
+          <Navigation className="h-5 w-5 animate-spin" /> Đang khởi tạo bản đồ vệ tinh...
+        </p>
+      </div>
+    )
+  }
 );
 
 export default function Home() {
